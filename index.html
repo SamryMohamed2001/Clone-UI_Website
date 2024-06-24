@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone - ZeloraTech Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>Phillips Curtis</h2>
+                <p>Employee ID: 3035</p>
+            </div>
+            <nav class="menu">
+                <a href="#" class="activehome"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-concierge-bell"></i> Services</a>
+                <a href="#"><i class="fas fa-user"></i> Profile</a>
+                <a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a>
+                <a href="#"><i class="fas fa-credit-card"></i> Payment Info</a>
+                <a href="#"><i class="fas fa-star"></i> Feedback & Rating</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+                    <nav class="breadcrumb">
+                        <h1>Dashboard</h1>
+                        <a href="#">Home</a> &gt; <span>Dashboard</span>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="search" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <i class="fas fa-bell notification"></i>
+                    <div class="user-info">
+                        <img src="profile.jpg" alt="User Picture">
+                        <div>
+                            <span>Dipak Deb Nath</span>
+                            <span style="font-size: smaller; color: gray;">Super Admin</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </header>
+            <section class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-clipboard-list" style="background-color: #ffeb3b; color: #ffc107; border-radius: 50%;"></i> 
+                    <div class="stat-text">
+                        Active Order <span>2</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-fire" style="background-color: #f8d7da; color: #dc3545; border-radius: 50%;"></i> 
+                    <div class="stat-text">
+                        Heating <span>13</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-bolt" style="background-color: #d4edda; color: #28a745; border-radius: 50%;"></i> 
+                    <div class="stat-text">
+                        Electrical <span>2</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-snowflake" style="background-color: #d1ecf1; color: #17a2b8; border-radius: 50%;"></i> 
+                    <div class="stat-text">
+                        Air-Condition <span>3</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-solar-panel" style="background-color: #8d8d8d; color: #3b4d5c; border-radius: 50%;"></i> 
+                    <div class="stat-text">
+                        Solar Panel <span>2</span>
+                    </div>
+                </div>
+            </section>
+            <section class="service-details">
+                <div class="filter-bar">
+                    <div class="service-details-left">
+                        <h1>Service Details</h1>
+                    </div>
+                    <div class="service-details-right">
+                        <select>
+                            <option>All Services</option>
+                        </select>
+                        <input type="date">
+                        <input type="search" placeholder="Search">
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Work Code</th>
+                            <th>Work Location</th>
+                            <th>Work Details</th>
+                            <th>Service Schedule</th>
+                            <th>Invoice No.</th>
+                            <th>Amount</th>
+                            <th>Payment</th>
+                            <th>Feedback</th>
+                            <th>Open Ticket</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>E-001</td>
+                            <td>123 Main St, Anytown, USA</td>
+                            <td>Electrical Repair</td>
+                            <td>13th May 2023</td>
+                            <td>3543</td>
+                            <td>$320</td>
+                            <td>Done</td>
+                            <td>Good</td>
+                            <td><button>Open Ticket</button></td>
+                        </tr>
+                        <tr>
+                            <td>H-001</td>
+                            <td>456 Elm St, Smallville, USA</td>
+                            <td>Heater Repair</td>
+                            <td>13th May 2023</td>
+                            <td>3544</td>
+                            <td>$120</td>
+                            <td>Done</td>
+                            <td>Good</td>
+                            <td><button>Open Ticket</button></td>
+                        </tr>
+                        <tr>
+                            <td>A-007</td>
+                            <td>789 Oak Ave, Pleasantville, USA</td>
+                            <td>Air-Condition Installations</td>
+                            <td>13th May 2023</td>
+                            <td>3545</td>
+                            <td>$180</td>
+                            <td>Done</td>
+                            <td>Good</td>
+                            <td><button>Open Ticket</button></td>
+                        </tr>
+                        <tr>
+                            <td>E-002</td>
+                            <td>321 Maple Dr, Springfield, USA</td>
+                            <td>Electrical Repair</td>
+                            <td>13th May 2023</td>
+                            <td>3546</td>
+                            <td>$400</td>
+                            <td>Done</td>
+                            <td>Good</td>
+                            <td><button>Open Ticket</button></td>
+                        </tr>
+                        <tr>
+                            <td>S-010</td>
+                            <td>555 Pine Ln, Lakeside, USA</td>
+                            <td>Solar Panel Maintenance</td>
+                            <td>13th May 2023</td>
+                            <td>3547</td>
+                            <td>$310</td>
+                            <td>Done</td>
+                            <td>Good</td>
+                            <td><button>Open Ticket</button></td>
+                        </tr>
+                        <tr>
+                            <td>E-003</td>
+                            <td>456 Elm St, Smallville, USA</td>
+                            <td>Electrical Repair</td>
+                            <td>13th May 2023</td>
+                            <td>3548</td>
+                            <td>$520</td>
+                            <td>Done</td>
+                            <td>Good</td>
+                            <td><button>Open Ticket</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <span><b>Showing 1 to 6 of 100 entries</b></span>
+                    <div class="page-controls">
+                        <button>&laquo;</button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>...</button>
+                        <button>&raquo;</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
